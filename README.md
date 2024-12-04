@@ -87,17 +87,25 @@ src/
 
 ## Endpoints Básicos 🔗
 
+
 # Usuário
 - **POST** /library/api/usuario/cadastrar: Cadastrar um novo usuário.
+![WhatsApp Image 2024-12-03 at 22 55 35](https://github.com/user-attachments/assets/bb3435ac-2ec8-4b4b-8d54-82e2a06742ba)
 
 # Livros
 - **POST** /library/api/livro/criar: Cadastrar um novo livro.
+- ![WhatsApp Image 2024-12-03 at 22 53 38](https://github.com/user-attachments/assets/0bde271d-fab6-4f8e-a342-81090083326d)
 - **GET** /library/api/livro/listar: Listar todos os livros.
+- ![WhatsApp Image 2024-12-03 at 22 54 04](https://github.com/user-attachments/assets/4dcdb627-6425-48a2-a9b0-9a736f8423c4)
 - **GET** /library/api/livro/lista-livros-mais-alugados: Listar livros mais alugados.
+- ![WhatsApp Image 2024-12-03 at 22 56 03](https://github.com/user-attachments/assets/eaae9420-cc63-4297-a9c4-5c6594fc0d9e)
 
 # Empréstimos
 - **POST** /library/api/emprestimo/solicitar-emprestimo: Solicitar um empréstimo.
+- ![WhatsApp Image 2024-12-03 at 22 54 38](https://github.com/user-attachments/assets/dd755a26-40f2-41a8-8e04-d58b227fd0f8)
 - **DELETE** /library/api/emprestimo/devolver-emprestimo: Devolver um livro.
+
+
 
 ## Futuras Funcionalidades 🔮
 
