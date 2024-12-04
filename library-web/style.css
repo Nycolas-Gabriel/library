@@ -1,12 +1,161 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap");
+
+:root {
+  --color-bg-gradient: linear-gradient(
+    175deg,
+    rgba(215, 215, 255, 1) 24%,
+    rgba(178, 240, 228, 1) 72%
+  );
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
 body {
-    font-family: Arial, sans-serif;
+  width: 100vw;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  background: var(--color-bg-gradient);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  transition: color 0.5s, background-color 0.5s;
+  line-height: 1.6;
+}
+
+h1 {
+  font-size: 28px;
+  margin-bottom: 20px;
+  text-align: center;
+  color: rgb(97, 97, 219);
+}
+
+.navbar {
+  display: flex;
+  align-items: center;
+  background-color: #ffff;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  padding: 10px 20px;
+}
+
+.navbar .logo {
+  width: 40px;
+  height: 40px;
+  margin-right: 15px;
+}
+
+.navbar .api-name {
+  color: #6161db;
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.main-container {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+  max-width: 1200px;
+  width: 100%;
+  justify-items: center;
+}
+
+.book-section,
+.form-section {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  width: 100%;
+}
+
+.book-section h2 {
+  font-size: 24px;
+  margin-bottom: 15px;
+}
+
+.book-section-img {
+  position: absolute;
+  width: 300px;
+  bottom: 160px;
+  left: 450px;
 }
 
 .book-list {
-    list-style: none;
-    padding: 0;
+  transform: translateX(18%);
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 8px;
+  list-style-type: disc;
+  padding: 0;
+  margin-top: 20px;
+  margin-right: 100px;
 }
 
 .book-item {
-    margin: 10px 0;
+  padding: 10px 0 2px 0;
+  text-align: left;
+  font-size: 18px;
+}
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+.form-control {
+  width: 100%;
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  margin-top: 5px;
+}
+
+.form-control:focus {
+  border-color: rgb(97, 97, 219);
+  outline: none;
+}
+
+.register-btn {
+  transform: translateX(170%);
+  padding: 10px 20px;
+  font-size: 16px;
+  font-weight: 600;
+  color: #fff;
+  background-color: rgb(97, 97, 219);
+  border: none;
+  border-radius: 50px;
+  text-decoration: none;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: background-color 0.3s ease, box-shadow 0.3s ease;
+  cursor: pointer;
+}
+
+.register-btn:hover {
+  background-color: rgb(62, 234, 200);
+}
+
+footer {
+  background-color: #fff;
+  box-shadow: 0 6px 8px rgba(0, 0, 0, 0.2);
+  color: rgb(97, 97, 219);
+  text-align: center;
+  padding: 20px;
+  position: relative;
+  bottom: 0;
+  width: 100%;
+  font-weight: 500;
+  margin-top: auto;
 }
