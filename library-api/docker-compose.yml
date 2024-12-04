@@ -38,6 +38,16 @@ services:
     networks:
       - library-network
 
+  front-end:
+    build:
+      context: ../library-web  # Caminho para o diretório do seu front-end
+    image: front-end
+    container_name: front-end
+    ports:
+      - "80:80"  # A porta do front-end no Docker será 80
+    networks:
+      - library-network
+
 volumes:
   mysql-data:
 
